@@ -1,0 +1,323 @@
+html
+{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+body
+{
+    background-image: url('/img/stoneWall_Mobile.jpg');
+    background-color: #1f2021;  
+    background-position: 50% 50%;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+    background-attachment: fixed;
+}
+
+.mainContainer
+{
+    margin: 25px auto 10px;
+    color:#bfbfbf;
+    font-size: 11px;
+    font-family: 'Roboto Slab', serif;
+}
+.gndLogo
+{
+    content:'';
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 0px 0px;
+    margin: 0px auto;
+}
+
+.gndSocialShareContainer
+{
+    padding: 12px 0px 20px;
+}
+    
+
+.gndSocialShare a:link, .gndSocialShare a:visited
+{
+    color: white;
+    text-decoration: none;
+    -webkit-transition: color 500ms; /* Safari */
+    transition: color 500ms;
+    outline: 0;
+}
+
+.gndSocialShare a:hover, .gndSocialShare a:focus, .gndSocialShare a:active
+{
+    color: #fd7800;
+    -webkit-transition: color 500ms; /* Safari */
+    transition: color 500ms;
+    outline: 0;
+}
+
+
+
+.gndAbout strong
+{
+    color: #fd7800;
+}
+
+
+
+footer
+{
+ color: #5d5d5d;    
+}
+
+
+::selection {
+  background: #7f7f7f; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: #7f7f7f; /* Gecko Browsers */
+  color: white; 
+}      
+
+@media (max-width:600px)
+{
+    .gndLogo
+    {
+        background-image: url('/img/gndLogo_Mobile.png');
+        background-size: 297px 328px;
+        width: 297px;
+        height: 328px;
+    }
+    .mainContainer
+    {
+        width: 300px
+    }
+    .gndAbout
+    {
+        padding: 5px 10px 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gndSocialShareContainer .gndSocialShare
+    {
+        font-size: 28px;
+        display: inline-block;
+        width: 50px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1200px)
+{
+    .gndLogo
+    {
+        background-image: url('/img/gndLogo_Desktop.png');
+        background-size: 587px 298px;
+        width: 587px;
+        height: 298px;
+    }
+    .mainContainer
+    {
+        width: 600px
+    }
+    .gndAbout
+    {
+        padding: 0px 0px 15px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .gndSocialShareContainer .gndSocialShare
+    {
+        font-size: 28px;
+        display: inline-block;
+        width: 50px;
+    }
+}
+@media (min-width: 1201px)
+{
+    .gndLogo
+    {
+        background-image: url('/img/gndLogo_Desktop.png');
+        background-size: 1173px 596px;
+        width: 1173px;
+        height: 596px;
+    }
+    .mainContainer
+    {
+        width: 1200px;
+    }
+    .gndAbout
+    {
+        padding: 0px 190px 30px;
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .gndSocialShareContainer .gndSocialShare
+    {
+        font-size: 38px;
+        display: inline-block;
+        width: 75px;
+    }
+}
+
+
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZjTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZjUj_cnvWIuuBMVgbX098Mw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZkbcKLIaa1LC45dFaAfauRA.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zmo_sUJ8uO4YLWRInS22T3Y.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zr6up8jxqWt8HVA3mDhkV_0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZiYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?wzmat2');
+  src:  url('fonts/icomoon.eot?wzmat2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wzmat2') format('truetype'),
+    url('fonts/icomoon.woff?wzmat2') format('woff'),
+    url('fonts/icomoon.svg?wzmat2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-warning:before {
+  content: "\e900";
+}
+.icon-chevron-down:before {
+  content: "\e901";
+}
+.icon-chevron-small-down:before {
+  content: "\e902";
+}
+.icon-chevron-thin-down:before {
+  content: "\e903";
+}
+.icon-dot-single:before {
+  content: "\e904";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e905";
+}
+.icon-dots-three-vertical:before {
+  content: "\e906";
+}
+.icon-dots-two-horizontal:before {
+  content: "\e907";
+}
+.icon-dots-two-vertical:before {
+  content: "\e908";
+}
+.icon-check:before {
+  content: "\e909";
+}
+.icon-email:before {
+  content: "\e90a";
+}
+.icon-mail:before {
+  content: "\e90b";
+}
+.icon-news:before {
+  content: "\e90c";
+}
+.icon-facebook-with-circle:before {
+  content: "\e90d";
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-instagram-with-circle:before {
+  content: "\e90f";
+}
+.icon-instagram:before {
+  content: "\e910";
+}
+.icon-tumblr-with-circle:before {
+  content: "\e911";
+}
+.icon-tumblr:before {
+  content: "\e912";
+}
+.icon-twitter-with-circle:before {
+  content: "\e913";
+}
+.icon-twitter:before {
+  content: "\e914";
+}
+.icon-youtube-with-circle:before {
+  content: "\e915";
+}
+.icon-youtube:before {
+  content: "\e916";
+}
+
